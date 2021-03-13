@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Weather PH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/other">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 100px;">
+        <center>
+            <div class="row justify-content-md-center">
+                <class class="col-2 align-self-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1920px-Flag_of_the_Philippines.svg.png" 
+                         style="width: 200px;">
+                </class>
+                <class class="col-3 align-self-center" >
+                    <div class="row">
+                        <h2 style="text-align: left;">
+                            <b><%= loc; %></b>
+                        </h2>
+                    </div>
+                    <div class="row ">
+                        <h4 style="text-align: left;">
+                            <% 
+                                var latSign = "N";
+                                var longSign = "E"
+                                if(lat < 0){
+                                    latsign = "S";
+                                }
+                                if(long < 0){
+                                    latsign = "W";
+                                }
+                            %>
+                            
+                            <%= lat;%>°
+                            <%= latSign;%>
+                            <%= long;%>°
+                            <%= longSign;%>
+                        </h5>
+                    </div>
+                </class>
+            </div>
+        </center>
+    </div>
+
+    <center>
+    <div class="container" style="margin-top: 150px;">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="container">
+                <class class="col align-self-center" >
+                    <div>
+                        <h5>
+                            <b><img src="<%= weather1; %> " style="height: 50px;"></b>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <b><%= day1; %></b>
+                        </h5>
+                    </div>
+                    <div >
+                        <h5>
+                            <%= day1month; %> <%= day1date.getDate(); %>, <%= day1date.getFullYear(); %>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <%= day1temp; %>°C
+                        </h5>
+                    </div>
+                </class>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+                <class class="col align-self-center" >
+                    <div>
+                        <h5>
+                            <b><img src="<%= weather2; %> " style="height: 50px;"></b>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <b><%= day2; %></b>
+                        </h5>
+                    </div>
+                    <div >
+                        <h5>
+                            <%= day2month; %> <%= day2date.getDate(); %>, <%= day2date.getFullYear(); %>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <%= day2temp; %>°C
+                        </h5>
+                    </div>
+                </class>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+                <class class="col align-self-center" >
+                    <div>
+                        <h5>
+                            <b><img src="<%= weather3; %> " style="height: 50px;"></b>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <b><%= day3; %></b>
+                        </h5>
+                    </div>
+                    <div >
+                        <h5>
+                            <%= day3month; %> <%= day3date.getDate(); %>, <%= day3date.getFullYear(); %>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <%= day3temp; %>°C
+                        </h5>
+                    </div>
+                </class>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+                <class class="col align-self-center" >
+                    <div>
+                        <h5>
+                            <b><img src="<%= weather4; %> " style="height: 50px;"></b>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <b><%= day4; %></b>
+                        </h5>
+                    </div>
+                    <div >
+                        <h5>
+                            <%= day4month; %> <%= day4date.getDate(); %>, <%= day4date.getFullYear(); %>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <%= day4temp; %>°C
+                        </h5>
+                    </div>
+                </class>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+                <class class="col align-self-center" >
+                    <div>
+                        <h5>
+                            <b><img src="<%= weather5; %> " style="height: 50px;"></b>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <b><%= day5; %></b>
+                        </h5>
+                    </div>
+                    <div >
+                        <h5>
+                            <%= day5month; %> <%= day5date.getDate(); %>, <%= day5date.getFullYear(); %>
+                        </h5>
+                    </div>
+                    <div>
+                        <h5>
+                            <%= day5temp; %>°C
+                        </h5>
+                    </div>
+                </class>
+            </div>
+          </div>
+        </div>
+    </div>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

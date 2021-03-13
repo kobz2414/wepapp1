@@ -1,0 +1,18 @@
+{
+  "name": "apicalls-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lorenz Kobe Managbanag",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "some-random-cat": "^2.2.1",
+    "weather-js": "^2.0.0"
+  }
+}
